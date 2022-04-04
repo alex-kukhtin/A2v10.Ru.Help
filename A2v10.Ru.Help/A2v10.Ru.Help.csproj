@@ -1,0 +1,446 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C3D1F1F-A25C-43E2-BA7C-42ABDCA70053}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>A2v10.Help</RootNamespace>
+    <AssemblyName>A2v10.Help</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IISExpressSSLPort />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".htaccess" />
+    <Content Include="bower.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="404.html" />
+    <Content Include="app\content.js" />
+    <Content Include="app\contentview.js" />
+    <Content Include="app\indexview.js" />
+    <Content Include="app\searchview.js" />
+    <Content Include="css\fonts\A2v10.svg" />
+    <Content Include="css\fonts\A2v10.eot" />
+    <Content Include="css\fonts\A2v10.ttf" />
+    <Content Include="css\fonts\A2v10.woff" />
+    <Content Include="css\fonts\A2v10.woff2" />
+    <None Include="html\index .htmlx" />
+    <Content Include="css\site.help.css" />
+    <Content Include="css\site.help.min.css">
+      <DependentUpon>site.help.css</DependentUpon>
+    </Content>
+    <Content Include="favicon.ico" />
+    <Content Include="html\app\folders\emails.html" />
+    <Content Include="html\app\folders\files.html" />
+    <Content Include="html\app\folders\layout.html" />
+    <Content Include="html\app\sendmessagecommand.html" />
+    <Content Include="html\app\callapicommand.html" />
+    <Content Include="html\app\commands.html" />
+    <Content Include="html\app\clrcommand.html" />
+    <Content Include="html\app\folders\assets.html" />
+    <Content Include="html\app\folders\index.html" />
+    <Content Include="html\app\files.html" />
+    <Content Include="html\app\reports.html" />
+    <Content Include="html\app\popups.html" />
+    <Content Include="html\app\dialogs.html" />
+    <Content Include="html\app\actions.html" />
+    <Content Include="html\client\treeelemprops.html" />
+    <Content Include="html\client\elemprops.html" />
+    <Content Include="html\client\arrayelemprops.html" />
+    <Content Include="html\client\rootprops.html" />
+    <Content Include="html\client\global_require.html" />
+    <Content Include="html\client\data.html" />
+    <Content Include="html\client\global.html" />
+    <Content Include="html\client\arrayprops.html" />
+    <Content Include="html\client\stdutils.html" />
+    <Content Include="html\client\module.html" />
+    <Content Include="html\client\localization.html" />
+    <Content Include="html\common\platform.html" />
+    <Content Include="html\common\index.html" />
+    <Content Include="html\app\redirect.html" />
+    <Content Include="html\client\controller.html" />
+    <Content Include="html\desktop\config.html" />
+    <Content Include="html\desktop\index.html" />
+    <Content Include="html\help\about.html" />
+    <Content Include="html\app\index.html" />
+    <Content Include="html\howto\importexcel.html" />
+    <Content Include="html\howto\index.html" />
+    <Content Include="html\images\client1.svg" />
+    <Content Include="html\images\mvc1.svg" />
+    <Content Include="html\images\property16.png" />
+    <Content Include="html\messaging\bindings.html" />
+    <Content Include="html\messaging\messagereportparam.html" />
+    <Content Include="html\messaging\messagereportmodel.html" />
+    <Content Include="html\messaging\messagereport.html" />
+    <Content Include="html\messaging\messageattachment.html" />
+    <Content Include="html\messaging\settings.html" />
+    <Content Include="html\messaging\emailmessage.html" />
+    <Content Include="html\messaging\messageaddress.html" />
+    <Content Include="html\messaging\templatedmessage.html" />
+    <Content Include="html\messaging\template.html" />
+    <Content Include="html\messaging\index.html" />
+    <Content Include="html\models\update.html" />
+    <Content Include="html\models\paging.html" />
+    <Content Include="html\models\blob.html" />
+    <Content Include="html\template\defaults.html" />
+    <Content Include="html\tests\checktypes.html" />
+    <Content Include="html\whatsnew\w202201.html" />
+    <Content Include="html\whatsnew\w202111.html" />
+    <Content Include="html\whatsnew\w202109.html" />
+    <Content Include="html\whatsnew\w202108.html" />
+    <Content Include="html\whatsnew\w202106.html" />
+    <Content Include="html\whatsnew\w202105.html" />
+    <Content Include="html\whatsnew\w202104.html" />
+    <Content Include="html\whatsnew\w202102.html" />
+    <Content Include="html\whatsnew\w202012.html" />
+    <Content Include="html\whatsnew\w202010.html" />
+    <Content Include="html\whatsnew\w202009.html" />
+    <Content Include="html\whatsnew\w202008.html" />
+    <Content Include="html\workflow\activities\sendmessage.html" />
+    <Content Include="html\workflow\objects\index.html" />
+    <Content Include="html\workflow\objects\trackrecord.html" />
+    <Content Include="html\workflow\objects\modelstateinfo.html" />
+    <Content Include="html\workflow\objects\messageinfo.html" />
+    <Content Include="html\workflow\objects\inbox.html" />
+    <Content Include="html\xaml\components\sortdescription.html" />
+    <Content Include="html\xaml\components\filterdescription.html" />
+    <Content Include="html\models\cross.html" />
+    <Content Include="html\models\array.html" />
+    <Content Include="html\models\group.html" />
+    <Content Include="html\models\simple.html" />
+    <Content Include="html\models\tree.html" />
+    <Content Include="html\template\options.html" />
+    <Content Include="html\template\delegates.html" />
+    <Content Include="html\tests\tools.html" />
+    <Content Include="html\tests\index.html" />
+    <Content Include="html\todo.txt" />
+    <Content Include="html\whatsnew\prev.html" />
+    <Content Include="html\whatsnew\w201809.html" />
+    <Content Include="html\whatsnew\w201808.html" />
+    <Content Include="html\whatsnew\w201807.html" />
+    <Content Include="html\whatsnew\w201810.html" />
+    <Content Include="html\whatsnew\w202006.html" />
+    <Content Include="html\whatsnew\w202005.html" />
+    <Content Include="html\whatsnew\w202003.html" />
+    <Content Include="html\whatsnew\w202002.html" />
+    <Content Include="html\whatsnew\w202001.html" />
+    <Content Include="html\whatsnew\w201912.html" />
+    <Content Include="html\whatsnew\w201911.html" />
+    <Content Include="html\whatsnew\w201910.html" />
+    <Content Include="html\whatsnew\w201909.html" />
+    <Content Include="html\whatsnew\w201908.html" />
+    <Content Include="html\whatsnew\w201907.html" />
+    <Content Include="html\whatsnew\w201905.html" />
+    <Content Include="html\whatsnew\w201904.html" />
+    <Content Include="html\whatsnew\w201903.html" />
+    <Content Include="html\whatsnew\w201901.html" />
+    <Content Include="html\whatsnew\w201812.html" />
+    <Content Include="html\whatsnew\w201811.html" />
+    <Content Include="html\workflow\activities\request.html" />
+    <Content Include="html\workflow\activities\index.html" />
+    <Content Include="html\workflow\index.html" />
+    <Content Include="html\xaml\abstract\checkboxbase.html" />
+    <Content Include="html\xaml\abstract\uicontentelement.html" />
+    <Content Include="html\xaml\abstract\valuedcontrol.html" />
+    <Content Include="html\xaml\abstract\rootcontainer.html" />
+    <Content Include="html\xaml\abstract\contentcontrol.html" />
+    <Content Include="html\xaml\abstract\index.html" />
+    <Content Include="html\xaml\bind\styleresource.html" />
+    <Content Include="html\xaml\components\confirm.html" />
+    <Content Include="html\xaml\components\slot.html" />
+    <Content Include="html\xaml\components\switch.html" />
+    <Content Include="html\xaml\components\validator.html" />
+    <Content Include="html\xaml\containers\case.html" />
+    <Content Include="html\xaml\containers\dropdownmegamenu.html" />
+    <Content Include="html\xaml\containers\tabbar.html" />
+    <Content Include="html\xaml\containers\wizardPage.html" />
+    <Content Include="html\xaml\containers\wizard.html" />
+    <Content Include="html\xaml\controls\datagridrowdetails.html" />
+    <Content Include="html\xaml\controls\fileimage.html" />
+    <Content Include="html\xaml\controls\propertygriditem.html" />
+    <Content Include="html\xaml\controls\propertygrid.html" />
+    <Content Include="html\xaml\containers\fullheightpanel.html" />
+    <Content Include="html\xaml\containers\card.html" />
+    <Content Include="html\xaml\containers\fieldset.html" />
+    <Content Include="html\xaml\containers\cardbody.html" />
+    <Content Include="html\xaml\containers\group.html" />
+    <Content Include="html\xaml\containers\flex.html" />
+    <Content Include="html\xaml\containers\repeater.html" />
+    <Content Include="html\xaml\containers\popup.html" />
+    <Content Include="html\xaml\containers\panel.html" />
+    <Content Include="html\xaml\containers\page.html" />
+    <Content Include="html\xaml\containers\inlinedialog.html" />
+    <Content Include="html\xaml\containers\tabpanel.html" />
+    <Content Include="html\xaml\containers\tab.html" />
+    <Content Include="html\xaml\containers\commandbar.html" />
+    <Content Include="html\xaml\containers\toolbar.html" />
+    <Content Include="html\xaml\abstract\commandcontrol.html" />
+    <Content Include="html\xaml\controls\pager.html" />
+    <Content Include="html\xaml\controls\label.html" />
+    <Content Include="html\xaml\controls\griddivider.html" />
+    <Content Include="html\xaml\controls\combobox.html" />
+    <Content Include="html\xaml\controls\alert.html" />
+    <Content Include="html\xaml\controls\chatitem.html" />
+    <Content Include="html\xaml\controls\comboboxitem.html" />
+    <Content Include="html\xaml\controls\code.html" />
+    <Content Include="html\xaml\controls\header.html" />
+    <Content Include="html\xaml\controls\emptypanel.html" />
+    <Content Include="html\xaml\controls\tabbutton.html" />
+    <Content Include="html\xaml\controls\timepicker.html" />
+    <Content Include="html\xaml\controls\static.html" />
+    <Content Include="html\xaml\containers\flexlist.html" />
+    <Content Include="html\xaml\controls\separator.html" />
+    <Content Include="html\xaml\controls\statecard.html" />
+    <Content Include="html\xaml\controls\graphics.html" />
+    <Content Include="html\xaml\controls\treeviewitem.html" />
+    <Content Include="html\xaml\controls\treeview.html" />
+    <Content Include="html\xaml\controls\uploadfile.html" />
+    <Content Include="html\xaml\diagram\path.html" />
+    <Content Include="html\xaml\diagram\group.html" />
+    <Content Include="html\xaml\diagram\index.html" />
+    <Content Include="html\xaml\diagram\diagram.html" />
+    <Content Include="html\xaml\enums\borderstyle.html" />
+    <Content Include="html\xaml\enums\justifyitems.html" />
+    <Content Include="html\xaml\enums\columnbackgroundstyle.html" />
+    <Content Include="html\xaml\enums\radiobuttonstyle.html" />
+    <Content Include="html\xaml\enums\autoflowmode.html" />
+    <Content Include="html\xaml\enums\backgroundstyle.html" />
+    <Content Include="html\xaml\enums\datatype.html" />
+    <Content Include="html\xaml\enums\updatetrigger.html" />
+    <Content Include="html\xaml\enums\textcolor.html" />
+    <Content Include="html\xaml\enums\columncontroltype.html" />
+    <Content Include="html\xaml\enums\buttonstyle.html" />
+    <Content Include="html\xaml\enums\controlsize.html" />
+    <Content Include="html\xaml\enums\liststyle.html" />
+    <Content Include="html\xaml\enums\alignitems.html" />
+    <Content Include="html\xaml\enums\orientation.html" />
+    <Content Include="html\xaml\enums\shadowstyle.html" />
+    <Content Include="html\xaml\enums\textalign.html" />
+    <Content Include="html\xaml\enums\alignitem.html" />
+    <Content Include="html\xaml\enums\verticalalign.html" />
+    <Content Include="html\xaml\enums\autoselectmode.html" />
+    <Content Include="html\xaml\enums\icon.html" />
+    <Content Include="html\xaml\overview\index.html" />
+    <Content Include="html\xaml\overview\extensions.html" />
+    <Content Include="html\xaml\sheet\index.html" />
+    <Content Include="html\xaml\sheet\sheetcolumngroup.html" />
+    <Content Include="html\xaml\sheet\sheetcellgroup.html" />
+    <Content Include="html\xaml\sheet\sheetcolumn.html" />
+    <Content Include="html\xaml\sheet\sheetautogenerate.html" />
+    <Content Include="html\xaml\sheet\sheetsection.html" />
+    <Content Include="html\xaml\sheet\sheetgroupcell.html" />
+    <Content Include="html\xaml\sheet\sheettreesection.html" />
+    <Content Include="html\xaml\sheet\sheetpage.html" />
+    <Content Include="html\xaml\sheet\sheet.html" />
+    <Content Include="html\xaml\sheet\sheetrow.html" />
+    <Content Include="html\xaml\sheet\sheetcell.html" />
+    <Content Include="html\xaml\simple\accel.html" />
+    <Content Include="html\xaml\simple\accelcommand.html" />
+    <Content Include="html\xaml\simple\index.html" />
+    <Content Include="html\xaml\simple\gapsize.html" />
+    <Content Include="html\xaml\simple\gridlength.html" />
+    <Content Include="html\xaml\simple\printpage.html" />
+    <Content Include="html\xaml\simple\accelcommandcollection.html" />
+    <Content Include="html\xaml\simple\resourcedictionary.html" />
+    <Content Include="html\xaml\simple\uielementcollection.html" />
+    <Content Include="html\xaml\simple\length.html" />
+    <Content Include="html\xaml\simple\size.html" />
+    <Content Include="html\xaml\simple\thickness.html" />
+    <Content Include="html\xaml\abstract\uielement.html" />
+    <Content Include="html\xaml\abstract\uielementbase.html" />
+    <Content Include="html\xaml\bind\bindcmd.html" />
+    <Content Include="html\xaml\bind\index.html" />
+    <Content Include="html\xaml\bind\bind.html" />
+    <Content Include="html\client\index.html" />
+    <Content Include="html\images\demo.png" />
+    <Content Include="html\app\model.html" />
+    <Content Include="html\models\general.html" />
+    <Content Include="html\models\index.html" />
+    <Content Include="html\template\commands.html" />
+    <Content Include="html\template\validators.html" />
+    <Content Include="html\template\properties.html" />
+    <Content Include="html\template\events.html" />
+    <Content Include="html\template\index.html" />
+    <Content Include="html\views\index.html" />
+    <Content Include="html\whatsnew\w201806.html" />
+    <Content Include="html\whatsnew\w201805.html" />
+    <Content Include="html\whatsnew\w201804.html" />
+    <Content Include="html\whatsnew\w201803.html" />
+    <Content Include="html\xaml\components\collectionview.html" />
+    <Content Include="html\xaml\components\index.html" />
+    <Content Include="html\xaml\abstract\container.html" />
+    <Content Include="html\xaml\containers\dialog.html" />
+    <Content Include="html\xaml\containers\dropdownmenu.html" />
+    <Content Include="html\xaml\containers\gridgroup.html" />
+    <Content Include="html\xaml\containers\grid.html" />
+    <Content Include="html\xaml\containers\partial.html" />
+    <Content Include="html\xaml\containers\include.html" />
+    <Content Include="html\xaml\containers\iframe.html" />
+    <Content Include="html\xaml\containers\taskpad.html" />
+    <Content Include="html\xaml\containers\stackpanel.html" />
+    <Content Include="html\xaml\containers\index.html" />
+    <Content Include="html\xaml\containers\block.html" />
+    <Content Include="html\xaml\containers\splitter.html" />
+    <Content Include="html\xaml\abstract\control.html" />
+    <Content Include="html\xaml\controls\listitem.html" />
+    <Content Include="html\xaml\controls\periodpicker.html" />
+    <Content Include="html\xaml\controls\image.html" />
+    <Content Include="html\xaml\controls\list.html" />
+    <Content Include="html\xaml\controls\tablecolumn.html" />
+    <Content Include="html\xaml\controls\textbox.html" />
+    <Content Include="html\xaml\controls\checkbox.html" />
+    <Content Include="html\xaml\controls\datepicker.html" />
+    <Content Include="html\xaml\controls\datagridcolumn.html" />
+    <Content Include="html\xaml\controls\tablemarkcell.html" />
+    <Content Include="html\xaml\controls\tablecell.html" />
+    <Content Include="html\xaml\controls\tablerow.html" />
+    <Content Include="html\xaml\controls\table.html" />
+    <Content Include="html\xaml\controls\datagrid.html" />
+    <Content Include="html\xaml\controls\radio.html" />
+    <Content Include="html\xaml\controls\menuitem.html" />
+    <Content Include="html\xaml\controls\index.html" />
+    <Content Include="html\xaml\controls\button.html" />
+    <Content Include="html\xaml\controls\selector.html" />
+    <Content Include="html\xaml\enums\index.html" />
+    <Content Include="html\xaml\enums\wrapmode.html" />
+    <Content Include="html\xaml\index.html" />
+    <Content Include="html\whatsnew\w201802.html" />
+    <Content Include="html\whatsnew\index.html" />
+    <Content Include="html\xaml\text\badge.html" />
+    <Content Include="html\xaml\abstract\inline.html" />
+    <Content Include="html\xaml\text\spansum.html" />
+    <Content Include="html\xaml\text\paragraph.html" />
+    <Content Include="html\xaml\text\popover.html" />
+    <Content Include="html\xaml\text\hyperlink.html" />
+    <Content Include="html\xaml\text\html.html" />
+    <Content Include="html\xaml\text\staticimage.html" />
+    <Content Include="html\xaml\text\spanicon.html" />
+    <Content Include="html\xaml\text\taglabel.html" />
+    <Content Include="html\xaml\text\line.html" />
+    <Content Include="html\xaml\text\index.html" />
+    <Content Include="html\xaml\text\break.html" />
+    <Content Include="html\xaml\text\span.html" />
+    <Content Include="html\xaml\text\text.html" />
+    <Content Include="root.php" />
+    <Content Include="Less\Site.Help.less" />
+    <Content Include="content.txt" />
+    <Content Include="Less\IndexView.less" />
+    <Content Include="Less\MainView.less" />
+    <Content Include="Less\Variables.less" />
+    <Content Include="Less\Text.less" />
+    <None Include="packages.config" />
+    <Content Include="README.md" />
+    <Content Include="scripts\a2v10.js" />
+    <Content Include="scripts\a2v10.min.js" />
+    <Content Include="scripts\locale-ru.min.js" />
+    <Content Include="sitemap.txt" />
+    <Content Include="visio\mvc1vsdx.vsdx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\include.js" />
+    <Content Include="css\site.css" />
+    <Content Include="css\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="html\index.html" />
+    <Content Include="index.html" />
+    <Content Include="robots.txt" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\vue.js" />
+    <Content Include="scripts\vue.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61941</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61941/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:61941/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)MakeHelp\bin\Release\makeHelp.exe $(SolutionDir)\A2v10.Ru.Help</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
