@@ -20,7 +20,7 @@ namespace MakeHelp
 			var apacheFile = ConfigurationManager.AppSettings["apacheFile"];
 			if (String.IsNullOrEmpty(apacheFile))
 				return false;
-			_fileName = Path.Combine(dir, "..\\..\\apache.zip");
+			_fileName = Path.Combine(dir, "..\\..\\apache-ru.zip");
 			_fileName = Path.GetFullPath(_fileName);
 			WriteFile();
 			return true;
